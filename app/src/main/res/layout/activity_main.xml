@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cp_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.25" />
+
+        <EditText
+            android:id="@+id/et_mobile_number"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.75"
+            android:padding="10dp"
+            android:hint="enter mobile number"
+            android:background="@drawable/edit_bg"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_number_of_msgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="how many times:"
+        android:background="@drawable/edit_bg"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="enter your msg here:"
+        android:background="@drawable/edit_bg"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/btn_send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send sms"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
